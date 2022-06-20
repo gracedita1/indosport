@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/main.css" />
+    <link rel="stylesheet" href="src/styles/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles/playerlist.css">
+    <title>INDO SPORT</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="logo">
+        <img src="src/script/data/images/flag.png" alt="Indonesia" />
+        <h3>INDO SPORT</h3>
+      </div>
+      <ul class="menu">
+        <li><a class="nav-link" href="#">Home</a></li>
+        <li><a class="nav-link" href="#">Football</a></li>
+        <li><a class="nav-link" href="#">Badminton</a></li>
+        <li><a class="nav-link" href="#">Table Tennis</a></li>
+        <li class="nav-item-dropdown">
+          <a class="nav-link-dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown V  
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </ul>
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <main class="container">
+      <search-bar></search-bar>
+      <div class="content">
+          <div id="playerList">
+              <section id="row_1"></section>
+              <section id="row_2"></section>
+              <section id="row_3"></section>
+              <section id="row_4"></section>
+          </div>
+      </div>
+  </main>
+  </body>
+  
+  <script src="index.js"></script>
+</html>
